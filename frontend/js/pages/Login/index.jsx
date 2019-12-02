@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     width: "100%",
     height: "60px"
-    
+
   },
 }));
 
@@ -41,19 +41,19 @@ const Login = ({Authenticate}) => {
     Axios.post("/users/api/login", credencials).then( response => {
       const token = response.data.token
       localStorage.setItem("token", token);
-      Authenticate(true, response.data), 
+      Authenticate(true, response.data),
       History.push("/home/");
     }).catch( error => {
       localStorage.removeItem("token");
       History.push("/");
-    });  
+    });
   }
 
   return (
     <>
       <style.BackGround>
         <style.Login>
-          <style.Title>UFFacilitator</style.Title>
+          <style.Title>UFFacilitador</style.Title>
           <TextField
               id="outlined-search"
               name="usuario"
@@ -96,9 +96,9 @@ const Login = ({Authenticate}) => {
               }}
           />
 
-          <Button 
-            variant="contained" 
-            color="primary" 
+          <Button
+            variant="contained"
+            color="primary"
             className={classes.button}
             size="large"
             onClick={() => login({ username, password }) }>

@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const NavBar = ({ navBarState, toggleDrawer }) => {  
+const NavBar = ({ navBarState, toggleDrawer }) => {
   const classes = useStyles();
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -53,17 +53,17 @@ const NavBar = ({ navBarState, toggleDrawer }) => {
     <div className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
-          <IconButton 
-            edge="start" 
-            className={classes.menuButton} 
-            color="inherit" 
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
             aria-label="menu"
             onClick={ () => toggleDrawer('left', true )}>
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            UFFacilitator
-          </Typography>          
+            UFFacilitador
+          </Typography>
             <div>
               <IconButton
                 aria-label="account of current user"
