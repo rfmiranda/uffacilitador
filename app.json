@@ -1,6 +1,6 @@
 {
-  "name": "uffacilitator",
-  "description": "Uffacilitator Heroku app.",
+  "name": "uffacilitador",
+  "description": "Uffacilitador Heroku app.",
   "env": {
     "ALLOWED_HOSTS": {
       "description": "Django ALLOWED_HOSTS setting, e.g.: .appname.herokuapp.com"
